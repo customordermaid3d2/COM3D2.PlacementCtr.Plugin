@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM3D2.PlacementCtr.Plugin", "COM3D2.PlacementCtr.Plugin\COM3D2.PlacementCtr.Plugin.csproj", "{3A901A7B-934C-4C72-9619-C33093FBFA70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COM3D25.PlacementCtr.Plugin", "COM3D25.PlacementCtr.Plugin\COM3D25.PlacementCtr.Plugin.csproj", "{33707E0A-6695-49CA-ABB7-BEF80B753AD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A901A7B-934C-4C72-9619-C33093FBFA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A901A7B-934C-4C72-9619-C33093FBFA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A901A7B-934C-4C72-9619-C33093FBFA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A901A7B-934C-4C72-9619-C33093FBFA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33707E0A-6695-49CA-ABB7-BEF80B753AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33707E0A-6695-49CA-ABB7-BEF80B753AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33707E0A-6695-49CA-ABB7-BEF80B753AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33707E0A-6695-49CA-ABB7-BEF80B753AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {206A13FF-1B3C-48E2-A056-761094CB8346}
+	EndGlobalSection
+EndGlobal
