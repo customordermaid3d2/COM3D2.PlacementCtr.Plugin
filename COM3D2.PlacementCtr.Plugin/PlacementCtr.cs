@@ -35,7 +35,7 @@ namespace COM3D2.PlacementCtr.Plugin
             log = Logger;
             log.LogMessage($"Awake");
             log.LogMessage($"https://github.com/customordermaid3d2/COM3D2.PlacementCtr.Plugin");
-
+            PlacementCtrPatch.init();
             myWindowRect = new WindowRectUtill(Config, MyAttribute.PLAGIN_FULL_NAME, MyAttribute.PLAGIN_NAME, "PC" ,ho:300);
         }
 
