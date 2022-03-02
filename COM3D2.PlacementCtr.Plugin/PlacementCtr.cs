@@ -34,8 +34,9 @@ namespace COM3D2.PlacementCtr.Plugin
         {
             log = Logger;
             log.LogMessage($"Awake");
+            log.LogMessage($"https://github.com/customordermaid3d2/COM3D2.PlacementCtr.Plugin");
 
-            myWindowRect = new WindowRectUtill(Config, MyAttribute.PLAGIN_FULL_NAME, MyAttribute.PLAGIN_NAME, "PC");
+            myWindowRect = new WindowRectUtill(Config, MyAttribute.PLAGIN_FULL_NAME, MyAttribute.PLAGIN_NAME, "PC" ,ho:300);
         }
 
         public void OnEnable()
@@ -114,19 +115,23 @@ namespace COM3D2.PlacementCtr.Plugin
             if (GUILayout.Button("x", GUILayout.Width(20), GUILayout.Height(20))) { myWindowRect.IsGUIOn = false; }
             GUILayout.EndHorizontal();// 가로 정렬 끝
 
-            if (!myWindowRect.IsOpen)
+            if (myWindowRect.IsOpen )
             {
+                if ( isCan)
+                {
+                    // 스크롤 영역
+                    scrollPosition = GUILayout.BeginScrollView(scrollPosition);
 
+                    if (GUILayout.Button("Random Maid Active")) { PlacementCtrPatch.RandomMaid(); }
+
+                    GUILayout.EndScrollView();
+                }
+                else
+                {
+                    GUILayout.Label("Not ScenePhotoMode");
+                }
             }
-            else
-            {
-                // 스크롤 영역
-                scrollPosition = GUILayout.BeginScrollView(scrollPosition);
 
-                if (GUILayout.Button("Random Maid Active")) { PlacementCtrPatch.RandomMaid(); }
-
-                GUILayout.EndScrollView();
-            }
             GUI.enabled = true;
             GUI.DragWindow(); // 창 드레그 가능하게 해줌. 마지막에만 넣어야함
         }
